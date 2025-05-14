@@ -1,5 +1,7 @@
 local opt = vim.opt  -- shorthand
 
+opt.guicursor = ""             -- Disable all cursor shape changes
+
 -- UI
 opt.number = true              -- show line numbers
 opt.relativenumber = true      -- relative line numbers

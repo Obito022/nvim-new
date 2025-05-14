@@ -45,3 +45,7 @@ opt.undofile = true            -- enable persistent undo
 -- Performance
 opt.updatetime = 300           -- faster completion
 opt.timeoutlen = 500           -- faster key sequences
+
+opt.mouse = "a"                -- for easy mouse resizing, just incase
+
+vim.g.editorconfig = true      -- gets rid of line with white spaces

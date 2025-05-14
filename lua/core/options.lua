@@ -1,3 +1,6 @@
+--  Disable Netrw's help banner for a cleaner file explorer
+vim.cmd("let g:netrw_banner = 0 ")
+
 local opt = vim.opt  -- shorthand
 
 opt.guicursor = ""             -- Disable all cursor shape changes

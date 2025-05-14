@@ -55,4 +55,7 @@ opt.backspace = { "start", "eol", "indent" }
 opt.splitright = true         --split vertical window to the right
 opt.splitbelow = true         --split horizontal window to the bottom
 
-vim.g.editorconfig = true      -- gets rid of line with white spaces
+vim.g.editorconfig = true     -- gets rid of line with white spaces
+
+opt.termguicolors = true  -- Enable true colors
+opt.background = "dark"   -- Force dark mode

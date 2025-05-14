@@ -11,7 +11,7 @@ opt.relativenumber = true      -- relative line numbers
 opt.ruler = true               -- show cursor position
 opt.laststatus = 2             -- always show statusline
 opt.showmode = false           -- don't show -- INSERT -- in command line
-opt.cursorline = true          -- highlight current line
+opt.cursorline = false         -- highlight current line
 
 -- Search
 opt.hlsearch = true            -- highlight search matches
@@ -36,6 +36,7 @@ opt.belloff = "all"            -- disable all bells
 opt.wrap = false               -- don't wrap lines
 opt.scrolloff = 8              -- keep cursor 8 lines from screen edge
 opt.sidescrolloff = 8
+vim.opt.signcolumn = "yes"     -- Always show sign column (left gutter)
 
 -- File
 opt.swapfile = false
@@ -57,5 +58,5 @@ opt.splitbelow = true         --split horizontal window to the bottom
 
 vim.g.editorconfig = true     -- gets rid of line with white spaces
 
-opt.termguicolors = true  -- Enable true colors
-opt.background = "dark"   -- Force dark mode
+opt.termguicolors = true      -- Enable true colors
+opt.background = "dark"       -- Force dark mode

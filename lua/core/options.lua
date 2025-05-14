@@ -48,4 +48,11 @@ opt.timeoutlen = 500           -- faster key sequences
 
 opt.mouse = "a"                -- for easy mouse resizing, just incase
 
+-- backspace
+opt.backspace = { "start", "eol", "indent" }
+
+--split windows
+opt.splitright = true         --split vertical window to the right
+opt.splitbelow = true         --split horizontal window to the bottom
+
 vim.g.editorconfig = true      -- gets rid of line with white spaces

@@ -22,8 +22,9 @@ opt.smartcase = true           -- ...unless there's a capital letter
 -- Indentation
 opt.autoindent = true          -- maintain indent from previous line
 opt.smartindent = true         -- smarter autoindent
-opt.tabstop = 4                -- tabs = 4 spaces
-opt.shiftwidth = 4             -- indentation width
+opt.tabstop = 2                -- tabs = 2 spaces
+opt.softtabstop = 2                -- tabs = 2 spaces
+opt.shiftwidth = 2             -- indentation width
 opt.expandtab = true           -- use spaces instead of tabs
 
 -- Encoding

@@ -1,5 +1,4 @@
--- ~/.config/nvim/lua/core/init.lua
+--  ~/.config/nvim/lua/core
 
-require("core.options")
-
-require("core.keymaps")
+require("core.options")     -- vim.opt settings
+require("core.keymaps")     -- key mappings

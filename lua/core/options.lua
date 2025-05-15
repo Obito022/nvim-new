@@ -6,12 +6,13 @@ local opt = vim.opt  -- shorthand
 opt.guicursor = ""             -- Disable all cursor shape changes
 
 -- UI
+opt.syntax = "enable"         -- Force syntax highlighting
 opt.number = true              -- show line numbers
 opt.relativenumber = true      -- relative line numbers
-opt.ruler = true               -- show cursor position
-opt.laststatus = 2             -- always show statusline
+--opt.ruler = true               -- show cursor position
+opt.laststatus = 3             -- always show statusline
 opt.showmode = false           -- don't show -- INSERT -- in command line
-opt.cursorline = false         -- highlight current line
+opt.cursorline = true         -- highlight current line
 
 -- Search
 opt.hlsearch = true            -- highlight search matches
@@ -58,5 +59,5 @@ opt.splitbelow = true         --split horizontal window to the bottom
 
 vim.g.editorconfig = true     -- gets rid of line with white spaces
 
-opt.termguicolors = true      -- Enable true colors
+vim.opt.termguicolors = true
 opt.background = "dark"       -- Force dark mode

@@ -15,7 +15,7 @@ and productivity.
 │   │   └── autocmds.lua      -- New file for autocommands
 │   ├── plugins/
 │   │   ├── init.lua          -- Plugin declarations (your packer.lua)
-│   │   ├── setup.lua         -- Plugin configurations
+│   │   ├── lazy.lua          -- Plugin configurations
 │   │   └── colorscheme.lua   -- (your colors.lua)
 │   └── configs/              -- Language/server configs
 │       ├── lsp.lua

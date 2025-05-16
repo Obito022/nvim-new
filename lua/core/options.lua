@@ -12,7 +12,7 @@ opt.relativenumber = true      -- relative line numbers
 --opt.ruler = true               -- show cursor position
 opt.laststatus = 3             -- always show statusline
 opt.showmode = false           -- don't show -- INSERT -- in command line
-opt.cursorline = true         -- highlight current line
+opt.cursorline = false         -- highlight current line
 
 -- Search
 opt.hlsearch = true            -- highlight search matches
@@ -61,3 +61,27 @@ vim.g.editorconfig = true     -- gets rid of line with white spaces
 
 vim.opt.termguicolors = true
 opt.background = "dark"       -- Force dark mode
+
+-- Set transparent background for all relevant groups
+local function set_transparent()
+  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NonText", { bg = "none" })
+  vim.api.nvim_set_hl(0, "LineNr", { bg = "none" })
+  vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "none" })
+  vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
+  vim.api.nvim_set_hl(0, "VertSplit", { bg = "none" })
+  vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
+
+  -- Custom search highlight
+  vim.api.nvim_set_hl(0, "Search", { fg = "#000000", bg = "#ffff00" })
+  vim.api.nvim_set_hl(0, "Underlined", { underline = false })
+end
+
+-- Apply when colorscheme loads
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = set_transparent,
+})
+
+-- Optional: Apply immediately for faster feedback
+set_transparent()

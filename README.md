@@ -14,8 +14,8 @@ and productivity.
 │   │   ├── keymaps.lua       -- (your remap.lua)
 │   │   └── autocmds.lua      -- New file for autocommands
 │   ├── plugins/
-│   │   ├── init.lua          -- Plugin declarations (your packer.lua)
-│   │   ├── lazy.lua          -- Plugin configurations
+│   │   ├── init.lua          -- Lazy.nvim setup (bootstrap + basic config)
+│   │   ├── lazy.lua          -- Plugin declarations (specs+individual configs)
 │   │   └── colorscheme.lua   -- (your colors.lua)
 │   └── configs/              -- Language/server configs
 │       ├── lsp.lua

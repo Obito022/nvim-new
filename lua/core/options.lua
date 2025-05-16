@@ -11,7 +11,7 @@ opt.number = true              -- show line numbers
 opt.relativenumber = true      -- relative line numbers
 --opt.ruler = true               -- show cursor position
 opt.laststatus = 3             -- always show statusline
-opt.showmode = false           -- don't show -- INSERT -- in command line
+opt.showmode = true           -- don't show -- INSERT -- in command line
 opt.cursorline = false         -- highlight current line
 
 -- Search

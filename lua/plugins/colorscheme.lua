@@ -26,6 +26,26 @@ return {
 
     end,
   },
+  {
+    "Mofiqul/vscode.nvim",
+    lazy = true, -- Lazy-load, as moonfly is default
+    config = function()
+      local c = require('vscode.colors').get_colors()
+      require('vscode').setup({
+        transparent = true, -- Enable transparent background
+        italic_comments = true, -- Enable italic comments
+        disable_nvimtree_bg = true, -- Disable nvim-tree background color
+        color_overrides = {
+          vscLineNumber = '#A0A0A0', -- Match line number color
+        },
+        group_overrides = {
+          Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
+        },
+      })
+      -- Load colorscheme only when explicitly called (e.g., :colorscheme vscode)
+      -- vim.cmd.colorscheme("vscode") -- Uncomment if you want vscode as default
+    end,
+  },
   { "rose-pine/neovim", name = "rose-pine", lazy = true },
   { "ellisonleao/gruvbox.nvim", lazy = true },
   { "rebelot/kanagawa.nvim", lazy = true },

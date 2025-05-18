@@ -28,7 +28,8 @@ return {
   },
   {
     "Mofiqul/vscode.nvim",
-    lazy = true, -- Lazy-load, as moonfly is default
+    lazy = false, -- Lazy-load, as moonfly is default
+    -- priority = 1000, -- Load first
     config = function()
       local c = require('vscode.colors').get_colors()
       require('vscode').setup({

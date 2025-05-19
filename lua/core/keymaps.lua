@@ -20,3 +20,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", {
   desc = "Move selected line(s) up (visual mode)",
   silent = true
 })
+
+vim.api.nvim_set_keymap('i', '{<Tab>', '{<CR>}<Esc>O', { 
+  noremap = true,     -- {
+  silent = true       --     | (cursor here)
+})                    -- }

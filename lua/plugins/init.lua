@@ -27,5 +27,5 @@ vim.opt.rtp:prepend(lazypath)
 -- Initialize with lazy.lua specs
 require("lazy").setup("plugins.lazy", {
   defaults = { lazy = true },
-  checker = { enabled = true }
+  checker = { enabled = false }
 })

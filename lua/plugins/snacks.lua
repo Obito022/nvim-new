@@ -131,13 +131,13 @@ return {
                     { section = "keys", gap = 1, padding = 1 },
                     { section = "startup" },
                     {
-                        section = "terminal",
-                        -- brew install TheZoraiz/ascii-image-converter/ascii-image-converter
-                        cmd = "ascii-image-converter ~/Downloads/output/bgPic.jpeg -C -c",
-                        random = 15,
-                        pane = 2,
-                        indent = 7,
-                        height = 20,
+                        -- section = "terminal",
+                        -- -- brew install TheZoraiz/ascii-image-converter/ascii-image-converter
+                        -- cmd = "ascii-image-converter ~/Downloads/output/bgPic.jpeg -C -c",
+                        -- random = 1,
+                        -- pane = 2,
+                        -- indent = 5,
+                        -- height = 20,
                     },
                 },
             },

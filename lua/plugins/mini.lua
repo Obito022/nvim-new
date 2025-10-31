@@ -103,8 +103,8 @@ return {
     config = function()
       local miniSplitJoin = require("mini.splitjoin")
       miniSplitJoin.setup({ mappings = { toggle = "" } }) -- disable default
-      vim.keymap.set({ "n", "x" }, "sj", function() miniSplitJoin.join() end, { desc = "Join arguments" })
-      vim.keymap.set({ "n", "x" }, "sk", function() miniSplitJoin.split() end, { desc = "Split arguments" })
+      vim.keymap.set({ "n", "x" }, "<leader>sj", function() miniSplitJoin.join() end, { desc = "Join arguments" })
+      vim.keymap.set({ "n", "x" }, "<leader>sp", function() miniSplitJoin.split() end, { desc = "Split arguments" })
     end,
   },
 }

@@ -8,6 +8,7 @@ return {
   { import = "plugins.mini"         }, -- Mini-file Explorer
   { import = "plugins.todo-comments"},
   { import = "plugins.telescope"    }, -- Import Telescope
+  { import = "plugins.nvim-cmp"    }, -- Import Telescope
 
 
   -- Add this to disable netrw completely

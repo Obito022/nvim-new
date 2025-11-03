@@ -6,9 +6,22 @@ return {
   { import = "plugins.auto-pairs"   }, -- Autopairs (InsertEnter)
   { import = "plugins.snacks"       }, -- Snacks (ASCII etc.)
   { import = "plugins.mini"         }, -- Mini-file Explorer
-  { import = "plugins.todo-comments"},
-  { import = "plugins.telescope"    }, -- Import Telescope
-  { import = "plugins.nvim-cmp"    }, -- Import Telescope
+  { import = "plugins.todo-comments"}, -- Todo comments
+  { import = "plugins.telescope"    }, -- Telescope
+  { import = "plugins.nvim-cmp"     }, -- Completion
+  { import = "plugins.lsp"          }, -- LSP
+
+
+    -- Java LSP plugin (nvim-jdtls)
+  {
+    'mfussenegger/nvim-jdtls',
+    ft = { 'java' },  -- Lazy-load for Java files
+    config = function()
+      -- Call your setup function from jdtls_setup.lua
+      require('jdtls.jdtls_setup').setup()
+    end,
+  },
+
 
 
   -- Add this to disable netrw completely

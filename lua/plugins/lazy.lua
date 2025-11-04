@@ -10,6 +10,7 @@ return {
   { import = "plugins.telescope"    }, -- Telescope
   { import = "plugins.nvim-cmp"     }, -- Completion
   { import = "plugins.lsp"          }, -- LSP
+  { import = "plugins.noice"        }, 
 
 
     -- Java LSP plugin (nvim-jdtls)
